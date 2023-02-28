@@ -25,12 +25,13 @@
 // export default App;
 
 import React, { Component } from 'react';
+import Burger from './Burger';
 import Navbar from './Navbar';
 
 class App extends Component {
   render() {
     return (
-      <Navbar />
+      <Burger />
     );
   }
 }
