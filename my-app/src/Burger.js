@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Navbar from './Navbar';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import Navbar from "./Navbar";
+import styled from "styled-components";
 
 const Div = styled.div`
   width: 2rem;
@@ -20,9 +20,9 @@ const Div = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${props => props.open ? "#fff" : "#1565df"};
+    background: ${(props) => (props.open ? "#fff" : "#1565df")};
     border-radius: 10px;
-    
+
     transform-origin: 1px;
     transition: all 0.1 linear;
 
@@ -50,21 +50,21 @@ class Burger extends Component {
   }
 
   clickHandler = () => {
-    this.setState({open:!this.state.open});
+    this.setState({ open: !this.state.open });
   };
-    render() {
-        return (
-          <>
-            <Div open={this.state.open} onClick={this.clickHandler}>
-              <div></div>
-              <div></div>
-              <div></div>
-            </Div>
+  render() {
+    return (
+      <>
+        <Div open={this.state.open} onClick={this.clickHandler}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </Div>
 
-            <Navbar open={this.state.open} />
-          </>
-        );
-    }
+        <Navbar open={this.state.open} />
+      </>
+    );
+  }
 }
 
 export default Burger;
