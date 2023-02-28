@@ -11,14 +11,15 @@ right: 30px;
 z-index: 20;
 display: none;
 cursor: pointer;
-@media (max-width 768px) {
+
+@media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 div {
     width: 2rem;
-    height: 0.25rem
+    height: 0.25rem;
     background-color: #fff;
     border-radius: 10px;
 }

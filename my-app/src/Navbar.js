@@ -23,8 +23,7 @@ const Ul = styled.ul`
     li {
         color: #fff;
     }
- }
- `;
+ }`;
 
 
 const Navbar = () => {
